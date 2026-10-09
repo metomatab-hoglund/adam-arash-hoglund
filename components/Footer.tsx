@@ -1,0 +1,3 @@
+import Link from 'next/link';
+import {profile} from '@/lib/content';
+export default function Footer(){return <footer className="footer"><div><span className="footer-kicker">HAVE A PROJECT IN MIND?</span><a className="footer-title" href={`mailto:${profile.email}`}>Let's make<br/>it happen <span>↗</span></a></div><div className="footer-bottom"><span>© {new Date().getFullYear()} {profile.name}</span><div><Link href="/">Work</Link><Link href="/about">About</Link><Link href="/contact">Contact</Link><a href={profile.companyUrl} target="_blank" rel="noopener noreferrer">Höglunds Kompetens ↗</a></div><span>Designed for the energy transition.</span></div></footer>}

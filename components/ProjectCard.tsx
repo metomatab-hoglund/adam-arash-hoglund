@@ -1,0 +1,2 @@
+import Link from 'next/link';import type {Project} from '@/lib/content';import Artwork from './Artwork';
+export default function ProjectCard({project}: {project:Project}){return <Link className="project-card" href={`/work/${project.slug}`}><Artwork tone={project.tone}/><div className="project-caption"><div><span className="caption-index">{project.index} / {project.category}</span><h2>{project.title}</h2><p>{project.subtitle}</p></div><span className="project-arrow" aria-hidden="true">↗</span></div></Link>}

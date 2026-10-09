@@ -1,0 +1,1 @@
+import Link from 'next/link';export default function NotFound(){return <div className="wrap inner-page"><h1>Page not found<span className="lime">.</span></h1><Link className="pill-link" href="/">Back to work ↗</Link></div>}
